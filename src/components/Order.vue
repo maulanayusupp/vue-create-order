@@ -93,9 +93,7 @@ export default {
 	},
 	created() {},
 	destroyed() {},
-	mounted() {
-		console.log(this.order);
-	},
+	mounted() {},
 	methods: {
 		onInputUrl() {
 			if (this.url) {
