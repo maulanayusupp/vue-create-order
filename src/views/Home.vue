@@ -1,7 +1,7 @@
 <template>
 	<div class="home">
 		<div class="container p-5 text-center">
-			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalCreateOrder">
+			<button type="button" class="btn btn-primary btn-create-order" data-toggle="modal" data-target="#modalCreateOrder">
 				Create new order
 			</button>
 		</div>
