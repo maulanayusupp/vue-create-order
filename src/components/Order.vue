@@ -153,6 +153,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.form-control {
+	background-color: #F8F8FA;
+    border: 0;
+}
+
 .order {
 	.order-image {
 		position: relative;
