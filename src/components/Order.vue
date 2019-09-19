@@ -67,7 +67,7 @@
 </template>
 
 <script>
-import { validURL, limitCharacters, validateBetweenNumber } from '@/lib/helper';
+import { validURL, limitWords, validateBetweenNumber } from '@/lib/helper';
 
 export default {
 	name: 'Order',
@@ -105,7 +105,7 @@ export default {
 		},
 		onInputInstruction() {
 			if (this.instruction) {
-				const isValidInstruction = limitCharacters(this.instruction, 0, 30);
+				const isValidInstruction = limitWords(this.instruction, 30);
 				this.isValidInstruction = isValidInstruction;
 			} else {
 				this.isValidInstruction = true;

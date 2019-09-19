@@ -28,6 +28,17 @@ export const limitCharacters = (str, minlength, maxlength) => {
 };
 
 /**
+ * Limit characters
+ */
+export const limitWords = (str, limit) => {
+	const numberOfWords = str.split(' ');
+	if (numberOfWords.length > limit) {
+		return false;
+	}
+	return true;
+};
+
+/**
  * Validate between number
  */
 export const validateBetweenNumber = (value, min, max) => {
