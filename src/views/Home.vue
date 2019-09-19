@@ -1,18 +1,29 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+	<div class="home">
+		<div class="container p-5 text-center">
+			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalCreateOrder">
+				Create new order
+			</button>
+		</div>
+
+		<modal-create-order :order="order"></modal-create-order>
+	</div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue';
+import { order } from '@/lib/statics';
+import ModalCreateOrder from '@/components/ModalCreateOrder.vue';
 
 export default {
-  name: 'home',
-  components: {
-    HelloWorld,
-  },
+	name: 'home',
+	components: {
+		ModalCreateOrder,
+	},
+	data() {
+		return {
+			order,
+		};
+	},
+	mounted() {},
 };
 </script>
