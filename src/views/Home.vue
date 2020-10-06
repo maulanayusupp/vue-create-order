@@ -1,4 +1,5 @@
 <template>
+<!-- this is home page -->
 	<div class="home">
 		<div class="container p-5 text-center">
 			<button type="button" class="btn btn-primary btn-create-order" data-toggle="modal" data-target="#modalCreateOrder">
